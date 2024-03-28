@@ -1,1 +1,1 @@
-Проект "Оно тебе надо"
+https://github.com/Katerina-Ashe/ono-tebe-nado.git
