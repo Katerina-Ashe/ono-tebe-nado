@@ -31,8 +31,9 @@ header {
   text-decoration: none;
 }
 .list a:hover {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  
 }
 .list-footer {
   list-style: none;
@@ -332,7 +333,7 @@ footer {
   text-decoration: none;
 }
 .list-footer a:hover {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
 .socials {
@@ -341,7 +342,7 @@ footer {
   gap: 48px;
 }
 .socials img:hover {
-  transform: scale(1.3);
+  transform: scale(1.4);
 }
 .socials img {
   width: 48px;
