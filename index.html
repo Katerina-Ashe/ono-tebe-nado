@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
 
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
@@ -16,107 +16,88 @@
     <header>
       <nav class="menu">
         <ul class="list">
-          <li><a href="#cover">главная</a></li>
-          <li>
-            <img class="list-mar" src="images/list_marker.svg" /><a href="#"
-              >посмотреть лоты
-              <hr class="list-line-1" />
-            </a>
+          <li><a href="#">главная</a></li>
+          <li class="list-line list-marker">
+            <a href="#лоты">посмотреть лоты </a>
           </li>
-          <li>
-            <img class="list-mar" src="images/list_marker.svg" /><a href="#"
-              >об аукционе
-              <hr class="list-line-2" />
-            </a>
+          <li class="list-line list-marker">
+            <a href="#об аукционе">об аукционе </a>
           </li>
         </ul>
       </nav>
 
       <div class="logo-black">
         <a href="#">
-          <img src="images/logo-black.svg" />
+          <img src="images/logo-black.svg" alt="Логотип" />
         </a>
       </div>
-      <address class="contacts">
-        <a class="contacts-phone" href="tel:+9 999 555 5555"
-          >+9 999 555 5555
-          <hr class="contacts-line" />
-        </a>
+      <address class="contacts contacts-header">
+        <a class="contacts-phone" href="tel:+99995555555">+9 999 555 5555 </a>
         <a class="contacts-phone" href="mailto:info@sobaka.ge"
           >info@sobaka.ge
-          <hr class="contacts-line" />
         </a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
-    <div class="cover">
-      <div class="title">
+    <section class="cover">
+      <h1 class="title">
         <p class="t-one">о<span class="l-sp">но</span></p>
         <p class="t-two">те<span class="l-sp">бе</span></p>
-        <p class="t-three"><span class="l-sp">н</span>адо</p>
-      </div>
+        <p class="t-three">
+          <span class="l-sp">н</span>ад<span class="l-sp-2">о</span>
+        </p>
+      </h1>
       <div class="all-subline">
-        <div class="subline">Аукцион вещей, в которые никто не верил</div>
+        <p class="subline">Аукцион вещей, в которые никто не верил</p>
 
         <a href="" class="button">
-          <div class="button-1">
-            <p>Сделать ставку</p>
-          </div>
+          <p class="button-1">Сделать ставку</p>
         </a>
       </div>
-    </div>
+    </section>
 
-    <div class="lots">
-      <div class="lots-heading">Лоты</div>
-      <div class="lots-cards">
-        <div class="card-one">
-          <div class="card-text-one">
-            <a href=""> фильм режиссёра, который бросил киношколу</a>
+    <section class="lots" id="лоты">
+      <h2 class="lots-heading">Лоты</h2>
+      <article class="lots-cards">
+        <a class="card background card-one" href="">
+          <div class="card-title">
+            фильм режиссёра, который бросил киношколу
           </div>
-          <div class="card-text-last">
+          <div class="card-text">
             Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
             если бы вы не знали, что режиссёр — Пол Томас Андерсон?
           </div>
-        </div>
-        <div class="card-two">
-          <div class="card-text-one">
-            <a href=""
-              >Книга, где описан один скучный день из жизни рекламного агента</a
-            >
+        </a>
+        <a class="card background card-two" href="">
+          <div class="card-title">
+            Книга, где описан один скучный день из жизни рекламного агента
           </div>
-          <div class="card-text-last">
+          <div class="card-text">
             Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
             переходами на древнеанглийский. В ней одновременно рассказывается о
             16 июня 1904 года и об истории литературы, начиная с античных
             времён. И это всё накладывается на эпическую поэму Гомера. Сколько
             бы вы поставили на «Улисса» Джеймса Джойса?
           </div>
-        </div>
-        <div class="card-three">
-          <div class="card-text-one">
-            <a href="">
-              Картина, которую повторит даже 5-летний сын маминой подруги</a
-            >
+        </a>
+        <a class="card background card-three" href="">
+          <div class="card-title">
+            Картина, которую повторит даже 5-летний сын маминой подруги
           </div>
-          <div class="card-text-last">
+          <div class="card-text">
             Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
             похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
             Сколько бы вы на такое поставили, если бы не знали, что это — одна
             из революционных работ Кандинского?
           </div>
-        </div>
-      </div>
-      <div class="more">
-        <a href="#">
-          посмотреть больше
-          <hr class="more-line" />
         </a>
-      </div>
-    </div>
+      </article>
+      <a class="more" href="">посмотреть больше</a>
+    </section>
 
-    <div class="about">
+    <div class="about" id="об аукционе">
       <div class="logo-column">
-        <img class="logo-white" src="images/logo-white.svg" />
+        <img class="logo-white" src="images/logo-white.svg" alt="логотип" />
       </div>
       <div class="about-column">
         <h2>об аукционе</h2>
@@ -141,38 +122,30 @@
     </div>
 
     <footer>
-      <address class="contacts-foot">
-        <a class="contacts-phone" href="tel:+9 999 555 5555"
-          >+9 999 555 5555
-          <hr class="contacts-line" />
-        </a>
+      <address class="contacts">
+        <a class="contacts-phone" href="tel:+99995555555">+9 999 555 5555 </a>
         <a class="contacts-phone" href="mailto:info@sobaka.ge"
           >info@sobaka.ge
-          <hr class="contacts-line" />
         </a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
-      <nav class="menu-footer">
+      <nav class="menu footer">
         <ul class="list-footer">
           <li><a href="#cover">главная</a></li>
-          <li>
-            <a href="#"
-              >посмотреть лоты
-              <hr class="list-line-1-footer" />
-            </a>
+          <li class="list-line">
+            <a href="#">посмотреть лоты </a>
           </li>
-          <li>
-            <a href="#"
-              >об аукционе
-              <hr class="list-line-2-footer" />
-            </a>
+          <li class="list-line">
+            <a href="#">об аукционе </a>
           </li>
         </ul>
       </nav>
       <div class="socials">
-        <a href=""> <img src="images/yt.svg" /></a>
-        <a href=""> <img src="images/vk.svg" /></a>
-        <a href=""> <img src="images/pinterest.svg" /></a>
+        <a href=""> <img src="images/yt.svg" alt="Ссылка на youtube" /></a>
+        <a href=""> <img src="images/vk.svg" alt="Ссылка на ВК" /></a>
+        <a href="">
+          <img src="images/pinterest.svg" alt="ССылка на pinterest"
+        /></a>
       </div>
     </footer>
   </body>
