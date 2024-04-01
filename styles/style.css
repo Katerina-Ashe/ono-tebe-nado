@@ -1,6 +1,4 @@
-/* место для вашего кода */
-
-header {
+.header {
   display: grid;
 
   width: 1052px;
@@ -13,11 +11,10 @@ header {
 .menu {
   margin: 44px 36px 39px 26.52px;
   width: 391.48px;
-
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 21px;
   color: #000000;
 }
@@ -27,13 +24,12 @@ header {
   list-style: none;
   gap: 13px;
 }
-.list a {
+.menu-link {
   text-decoration: none;
 }
 .list a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 2px;
-  
 }
 .list-footer {
   list-style: none;
@@ -44,9 +40,18 @@ header {
   list-style: none;
   text-underline-offset: 4px;
 }
-.list-line.list-marker {
-  list-style: circle;
-  list-style-position: inside;
+.list-marker {
+  list-style: none;
+}
+.list-marker::before {
+  border: 1px solid #000000;
+  width: 7px;
+  height: 7px;
+  content: "";
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 8px 11px 6px auto;
 }
 
 .contacts {
@@ -79,7 +84,7 @@ header {
 .cover {
   display: inline-block;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   margin-top: 96px;
   background-color: gray;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -92,7 +97,7 @@ header {
   display: grid;
 
   padding: 165px 50px 135px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
@@ -114,7 +119,7 @@ header {
   justify-self: flex-end;
   line-height: 100px;
 }
-.t-three span.l-sp-2 {
+.l-sp-2 {
   letter-spacing: 0em;
 }
 .l-sp {
@@ -129,7 +134,7 @@ header {
 .subline {
   padding-top: 12px;
   width: 637px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -140,16 +145,27 @@ header {
   text-align: center;
 }
 .button {
+  display: inline-flex;
   box-sizing: border-box;
   border: 1px solid #ffffff;
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   text-align: center;
   text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  justify-content: center;
 }
+
 .button-1 {
   margin: 12px 32px 11px 31px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -164,12 +180,12 @@ header {
 }
 .lots {
   width: 1052px;
-  height: 692px;
+  min-height: 692px;
   background-color: #fff;
   margin: 179px 24px auto 24px;
 }
 .lots-heading {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -185,12 +201,15 @@ header {
   gap: 25px;
   padding-top: 27px;
 }
-.lots-cards a {
-  text-decoration: none;
-}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1fr 1fr;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
+  text-decoration: none;
+  justify-content: center;
 }
 .card:hover {
   transform: scale(1.05);
@@ -198,21 +217,21 @@ header {
   box-shadow: 5px 2px 5px gray;
   filter: brightness(1.55);
 }
-.card.background.card-one {
+.card-one {
   background-color: aqua;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/card-lot-01.jpg);
   background-size: cover;
   background-position: center;
 }
-.card.background.card-two {
+.card-two {
   background-color: aqua;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/card-lot-02.jpg);
   background-size: cover;
   background-position: center;
 }
-.card.background.card-three {
+.card-three {
   background-color: aqua;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/card-lot-03.jpg);
@@ -222,7 +241,7 @@ header {
 
 .card-title {
   margin: 51px 40px auto 40px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -233,24 +252,21 @@ header {
 }
 
 .card-text {
-  margin: auto 40px auto 40px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding-bottom: 48px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 68%;
 }
 .more {
   display: block;
   margin-top: 30px;
   margin-left: 40px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -281,11 +297,11 @@ header {
   margin: 64px 45.52px 62px 46.48px;
 }
 
-.about-column h2 {
+.about-title {
   width: 291px;
   height: 47px;
   margin: 136px 402px auto 0;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -299,8 +315,8 @@ header {
   height: 312px;
   margin: 100px 24px auto auto;
 }
-.description-block p {
-  font-family: "Raleway";
+.description-text {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -309,7 +325,7 @@ header {
   margin-bottom: 24px;
   white-space: normal;
 }
-footer {
+.footer {
   display: inline-flex;
 
   width: 1000px;
@@ -317,21 +333,19 @@ footer {
   gap: 185px;
   margin: 180px 50px 88px 50px;
 }
-.menu.footer {
+.menu-footer {
   margin: 0 auto;
   width: 149px;
-  height: 64px;
+  min-height: 64px;
   text-align: center;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
 }
-.menu.footer a {
-  text-decoration: none;
-}
+
 .list-footer a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -341,7 +355,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 48px;
 }
-.socials img:hover {
+.socials-img:hover {
   transform: scale(1.4);
 }
 .socials img {
