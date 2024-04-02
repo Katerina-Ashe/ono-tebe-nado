@@ -27,7 +27,7 @@
 .menu-link {
   text-decoration: none;
 }
-.list a:hover {
+.menu-link:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
@@ -37,7 +37,6 @@
 
 .list-line {
   text-decoration: underline;
-  list-style: none;
   text-underline-offset: 4px;
 }
 .list-marker {
@@ -163,24 +162,12 @@
   justify-content: center;
 }
 
-.button-1 {
-  margin: 12px 32px 11px 31px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: transparent;
-}
 .button:hover {
   background-color: rgba(255, 255, 255, 0.3);
   transform: scale(1.2);
 }
 .lots {
   width: 1052px;
-  min-height: 692px;
   background-color: #fff;
   margin: 179px 24px auto 24px;
 }
@@ -281,7 +268,6 @@
   grid-template-columns: auto auto;
   gap: 72px;
   width: 1052px;
-  height: 595px;
   margin: 146px 24px auto 24px;
 }
 .logo-column {
@@ -299,7 +285,6 @@
 
 .about-title {
   width: 291px;
-  height: 47px;
   margin: 136px 402px auto 0;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -312,7 +297,6 @@
 }
 .description-block {
   width: 693px;
-  height: 312px;
   margin: 100px 24px auto auto;
 }
 .description-text {
@@ -346,10 +330,6 @@
   color: #000000;
 }
 
-.list-footer a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-}
 .socials {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -358,6 +338,6 @@
 .socials-img:hover {
   transform: scale(1.4);
 }
-.socials img {
+.socials-img {
   width: 48px;
 }
