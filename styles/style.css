@@ -306,12 +306,10 @@
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  margin-bottom: 24px;
   white-space: normal;
 }
 .footer {
   display: inline-flex;
-
   width: 1000px;
   background-color: #fff;
   gap: 185px;
